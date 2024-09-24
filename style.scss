@@ -1,0 +1,60 @@
+$colorBack1 : #236AB9;
+$colorBack2 : #F7E3D4;
+$colorFont1 : #FC7307;
+$colorFont2 : #091D34;
+$paragraph : #001E62;
+
+html, body{
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+img{
+    
+    height: 350px;
+    width: 550px;
+}
+.container {
+    min-height: 100%;
+    display: flex;
+    .nav{
+        width: 15%;
+        min-width: 140px;
+        color: $colorFont1;
+        padding-top: 55px;
+        padding-right: 30px;
+        text-align: center;
+        background-color: #236AB9;
+        h4 {
+            margin-left: 50px;
+        }
+    };
+    .main{
+        background-color: $colorBack2;
+        width: 85%;
+        min-height:  750px;
+        min-width: 600px;
+        h1 {
+            color: $colorFont2;
+            padding-top: 40px;
+            font-size: 62px;
+        }
+        p {
+            color: $paragraph;
+            width: 55%;
+            min-width: 550px;
+        }
+        > * {
+            margin-left: 30px;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: none;
+            color: $colorFont1;
+        }
+    }
+}
